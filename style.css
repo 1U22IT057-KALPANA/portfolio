@@ -52,6 +52,7 @@ ul li a:hover{
     }
 .img{
    margin-bottom: 100px;
+
    
     
 }
@@ -209,6 +210,66 @@ html{
         align-items: center;
      }
 }
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    header > * {
+        margin-bottom: 10px; /* Add space between header items */
+    }
+    
+    section.main {
+        flex-direction: column; /* Stack main section items vertically */
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center text */
+    }
+    
+    .img {
+        margin-bottom: 20px; /* Reduce margin for images */
+    }
+    
+    section.sec {
+        flex-direction: column; /* Stack about section items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    .desc {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 30px; /* Add top margin */
+        text-align: center; /* Center text */
+    }
+    
+    section.skills {
+        flex-direction: column; /* Stack skills section items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    .skill img {
+        margin-top: 10px; /* Add top margin for skill images */
+        margin-right: 0; /* Remove right margin */
+        width: 80%; /* Make skill images responsive */
+        max-width: 100px; /* Set a max width for images */
+    }
+    
+    .footer input, .footer textarea {
+        width: 90%; /* Make input fields responsive */
+        max-width: 350px; /* Set a max width for input fields */
+    }
+    
+    .footer button {
+        width: 90%; /* Make buttons responsive */
+        max-width: 350px; /* Set a max width for buttons */
+    }
+    
+    .copyright {
+        font-size: 12px; /* Reduce font size for copyright text */
+    }
+}
+
 
 
 
